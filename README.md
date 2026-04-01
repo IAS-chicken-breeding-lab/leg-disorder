@@ -1,4 +1,12 @@
-Under a uniform housing program, we generated context-specific serum metabolite profiles in a balanced cohort comprising chickens with natural leg disease (n = 102) and healthy group (n = 92), for which individual-level whole-genome sequencing (10X coverage), detailed growth traits, and measurements of 9 serum regulators of bone metabolism were obtained. 
-We first comprehensively quantified the response of leg disorders to metabolite levels, genetic component (heritability, h2) and co-expression networks. By integrating gene-disease interaction analyses with mQTL mapping in disease and healthy birds, we distinguished constitutive genetic drivers and disease-responsive regulators for chicken leg disorder. 
-Moreover, weighted correlation network analysis (WGCNA) of serum regulators of bone metabolism identified 135 key signature metabolites, and subsequent mGWAS combined with functional validation in mice, including mutation, expression, and pathway perturbation experiments, elucidated the context-specific regulatory mechanisms of the corresponding causal hub genes. 
-Finally, leveraging human and mouse PheWAS databases, we demonstrated that these genetic drivers are evolutionarily conserved, providing a high-resolution map of the metabolic-genetic interplay that dictates skeletal health across species.
+This repository contains the code used for integrative analysis of serum metabolomics, genomic variation, and phenotypic traits in chickens with and without leg disorders.
+
+The study is based on a balanced cohort comprising chickens with natural leg disease (n = 102) and healthy controls (n = 92). For each individual, whole-genome resequencing data (10× coverage), serum metabolite profiles, growth traits, and measurements of nine bone metabolism regulators were collected.
+
+The analytical workflow includes:
+
+Weighted correlation network analysis（WGCNA）
+Estimation of genetic components (heritability, h²)
+Metabolite GWAS (mGWAS) to identify candidate loci
+Colocalization (coloc) analysis between mQTLs and molecular QTLs (molQTLs) from Chicken Sex GTEx
+Mendelian randomization (MR) analysis integrating mQTLs with complex traits from Chicken GTEx
+This repository provides scripts to reproduce the main computational analyses described in the manuscript.
